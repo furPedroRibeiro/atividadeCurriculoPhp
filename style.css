@@ -1,0 +1,50 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.divForm {
+  border: 1px solid black;
+  margin-left: 25vw;
+  margin-top: 8vh;
+  margin-right: 25vw;
+}
+.input {
+  width: 25vw;
+  margin-left: 3vw;
+}
+textarea {
+  resize: none;
+}
+span {
+  font-family: 'Red Hat Text', sans-serif;
+  margin-left: 3vw;
+}
+#inputFile {
+  display: none;
+}
+#labelFile {
+  display: block;
+  text-align: center;
+  width: 25vw;
+  padding: 10px;
+  margin-left: 3vw;
+  background-color: #ca72e0;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Red Hat Text', sans-serif;
+  cursor: pointer;
+}
+#button {
+  display: block;
+  text-align: center;
+  width: 10vw;
+  padding: 10px;
+  margin-left: 3vw;
+  background-color: #ca72e0;
+  border: 2px solid#ca72e0;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Red Hat Text', sans-serif;
+  cursor: pointer;
+}
