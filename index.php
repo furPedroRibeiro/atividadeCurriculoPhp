@@ -74,6 +74,8 @@
             <input class="input" type="file" name="inputFile" id="inputFile" accept="image/png, image/jpeg, image/jpg">
             <br><br>
             <button id="button" onclick="enviar()">Enviar</button>
+            <br><br>
+            <a id="button" href="curriculo.html">Ver currículo</a>
         </form>
         <br>
         <br>
@@ -95,7 +97,7 @@
         $Anton = "Anton";
         $RedHatText = "Red Hat Text";
 
-        echo ('<!DOCTYPE html>
+        $texto = '<!DOCTYPE html>
         <html lang="pt-br">
           <head>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -184,7 +186,7 @@
                   <br />
                   <br />
                   <p class="textBody">
-                      
+                      '.$responsabilidades.'
                     </p>
                   <br />
                   <br />
@@ -192,7 +194,7 @@
                   <br />
                   <br />
                   <p class="textBody"
-                    ></p>
+                    >'.$conquistas.'</p>
                   <br />
                   <br />
                   <span class="title">Idiomas</span>
@@ -244,8 +246,13 @@
               </div>
             </div>
           </body>
-        </html>');
-            } else{
+        </html>';
+
+            $nome = 'curriculo.html';
+            $arquivo = fopen($nome, 'a+');
+            fwrite($arquivo, $texto);
+
+            } else if($_POST['name']==""){
                 echo '<script>alert("Formulário não foi preenchido ainda");</script>';
             }
     ?>
